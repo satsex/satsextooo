@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de la SAT - Ejemplo Ampliado</title>
+    <style>
+        /* Estilos generales y del encabezado */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #010f19;
+            color: #eee9e9;
+        }
+        .header {
+            background-color: #010f19;
+            padding: 10px 20px;
+            border-bottom: 2px solid #ebecec;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            height: 60px;
+        }
+        .nav-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-menu li {
+            margin-left: 20px;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #fbfcfd;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .main-banner {
+            background-image: url('Sat sexto perito.png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .banner-text h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        /* Estilos del contenido principal */
+        .content-section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: #0e0404;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(245, 242, 242, 0.1);
+        }
+        .list-container {
+            margin-top: 20px;
+        }
+        .list-container ul {
+            list-style: none;
+            padding: 0;
+        }
+        .list-container li {
+            background-color: #0e0404;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        /* Estilos para la tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #0e0404;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #333;
+            text-align: left;
+        }
+        th {
+            background-color: #004d99;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #1a1a1a;
+        }
+        /* Nuevo estilo para los artículos del reglamento */
+        .reglamento-articulo {
+            background-color: #0e0404;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(245, 242, 242, 0.1);
+            margin-bottom: 20px;
+        }
+        .reglamento-articulo h3 {
+            border-bottom: 2px solid #004d99;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        /* Estilos para la sección de contacto */
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .contact-info a {
+            color: #fbfcfd;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        /* Estilos para las imágenes */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        /* Estilos del pie de página */
+        .footer {
+            background-color: #004d99;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="descarga.png" alt="Logo de la SAT">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Agencia virtual</a></li>
+                <li><a href="#">Trámites</a></li>
+                <li><a href="#">Consultas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-banner">
+        <div class="banner-text">
+            <h1>Bienvenido a la SAT de 6to Perito Contador</h1>
+            <p>Superintendencia de Administración Tributaria</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Imágenes Destacadas</h2>
+        <div class="grid-container">
+            <div class="grid-item image-container">
+                <img src="descarga (1).png" alt="Logotipo de la SAT">
+                <p>Logotipo oficial de la Superintendencia de Administración Tributaria.</p>
+            </div>
+            <div class="grid-item image-container">
+                <img src="descarga.jpg" alt="Edificio de la SAT">
+                <p>Edificio de oficinas centrales de la SAT.</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="content-section">
+        <h2>Servicios Destacados</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Solicitud de NIT para mi empresa</h3>
+                <p>Ingresa y llena lo solicitado.</p>
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAVjV2I1UOUJHSVVUNVlaMjI1RjhRWE9aTlVJNTBOUS4u">Entrar</a>
+            </div>
+            <div class="grid-item">
+                <h3>Inscripción de empresa en el registro mercantil</h3>
+                <p>Entra y llena tu formulario.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQSsB-6qHjBlJ8gr8fQa5MMbj1M4u4ulAgqbfIcdh8Hvn3LQ/viewform">Entrar</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="content-section">
+        <h2>Información sobre nuestra institución</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Misión</h3>
+                <p>Recaudar y fiscalizar los tributos con transparencia y eficiencia para el beneficio de los guatemaltecos.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Visión</h3>
+                <p>Ser una institución moderna, confiable y líder en la administración tributaria, con servicios de calidad y equidad.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Valores</h3>
+                <p>Integridad, transparencia, ética, profesionalismo y servicio al contribuyente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Reglamento Interno</h2>
+        <div class="reglamento-articulo">
+            <h3>1. Disposiciones Generales</h3>
+            <p><strong>Artículo 1. Objeto del Reglamento:</strong> Establecer normas de conducta, organización y operación del personal de la agencia, garantizando un servicio ético y profesional en trámites ante la SAT SEXTO PERITO.</p>
+            <p><strong>Artículo 2. Ámbito de Aplicación:</strong> Es obligatorio para todos los colaboradores, prestadores de servicios y personal administrativo.</p>
+        </div>
+        <div class="reglamento-articulo">
+            <h3>2. Organización y Funciones</h3>
+            <p><strong>Artículo 3. Estructura Organizacional:</strong> La agencia cuenta con una estructura jerárquica que incluye al Presidente, Vicepresidente, Administrador, Gerente General, entre otros.</p>
+            <p><strong>Artículo 4. Funciones Generales:</strong> Cada área tiene funciones específicas orientadas a la atención y gestión de trámites fiscales.</p>
+        </div>
+        <div class="reglamento-articulo">
+            <h3>3. Normas de Conducta</h3>
+            <p><strong>Artículo 5. Principios éticos:</strong> Los colaboradores deben actuar con honestidad, confidencialidad, profesionalismo y respeto.</p>
+            <p><strong>Artículo 6. Confidencialidad:</strong> Está prohibida la divulgación de información sin el debido consentimiento.</p>
+            <p><strong>Artículo 7. Uso de recursos:</strong> Los recursos de la empresa deben ser utilizados únicamente para fines laborales.</p>
+        </div>
+        <div class="reglamento-articulo">
+            <h3>4. Horarios y Asistencia</h3>
+            <p><strong>Artículo 8. Jornada Laboral:</strong> La jornada es de lunes a viernes, de 8:00 a 17:00 horas.</p>
+            <p><strong>Artículo 9. Puntualidad y Asistencia:</strong> Tres retardos equivalen a una falta injustificada.</p>
+        </div>
+        <div class="reglamento-articulo">
+            <h3>5. Sanciones y Medidas Disciplinarias</h3>
+            <p><strong>Artículo 10. Faltas leves:</strong> Se considera falta leve el retardo, el uso inadecuado del uniforme o no presentar el carnet de la empresa.</p>
+            <p><strong>Artículo 11. Faltas Graves:</strong> Se consideran faltas graves la divulgación de información, falsificación de documentos o maltrato a clientes.</p>
+            <p><strong>Artículo 12. Sanciones:</strong> Las medidas disciplinarias pueden ser amonestación, suspensión o terminación laboral.</p>
+        </div>
+        <div class="reglamento-articulo">
+            <h3>6. Disposiciones Finales</h3>
+            <p><strong>Artículo 13. Modificaciones:</strong> Solo pueden ser realizadas por la Gerencia General con notificación escrita.</p>
+            <p><strong>Artículo 14. Aceptación:</strong> Todo colaborador debe firmar una carta de aceptación del reglamento al ingresar a la empresa.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Organización y Remuneración</h2>
+        <p>A continuación se muestra la estructura organizacional y la escala remunerativa de la agencia.</p>
+        
+        <img src="organigrama.png" alt="Organigrama SAT SEXTO PERITO" style="width:100%; max-width: 800px; display: block; margin: 20px auto;">
+        
+    </section>
+
+    <section class="content-section">
+        <h2>Contacto</h2>
+        <div class="grid-container">
+            <div class="grid-item contact-info">
+                <h3>Teléfono</h3>
+                <p>+502 2423-1234</p>
+                <p>+502 2423-5678</p>
+            </div>
+            <div class="grid-item contact-info">
+                <h3>Correo Electrónico</h3>
+                <p>contacto@sat-perito.com</p>
+                <p>soporte@sat-perito.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 SAT - Superintendencia de Administración Tributaria</p>
+        <p>Dirección: 7a. Av. 3-73 zona 9, Edificio SAT, Guatemala</p>
+    </footer>
+
+</body>
+</html>
